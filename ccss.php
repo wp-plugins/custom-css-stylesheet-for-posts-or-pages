@@ -30,7 +30,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 define('CCSS_PATH','/custom-css/');
 /* AND THAT'S ABOUT IT */
 
-define('CCSS_VERSION','1.0');
+define('CCSS_VERSION','1.1');
 
 function ccss_box() {
  $ccss_post_types = _ccss_get_post_types();
