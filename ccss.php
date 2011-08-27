@@ -3,7 +3,7 @@
 Plugin Name: Custom CSS for Posts and Pages (CCSS)
 Plugin URI: http://webtoolkit4.me
 Description: An easy way to include custom stylesheets per post/page
-Version: 1.0
+Version: 1.1
 Author: Gerasimos Tsiamalos
 Author URI: http://webtoolkit4.me/
 
@@ -29,14 +29,14 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 define('CCSS_PATH','/custom-css/');
 /* AND THAT'S ABOUT IT */
 
-define('CCSS_VERSION','1.0');
+define('CCSS_VERSION','1.1');
 
 function ccss_box() {
  $ccss_post_types = _ccss_get_post_types();
 	
 	foreach ($ccss_post_types as $key=>$value)
 	{
-		add_meta_box( 'custom-css', 'Custom CSS for posts/pages (CCSS)', 'ccss_add_box', $key, 'normal','high' );
+	Ã	add_meta_box( 'custom-css', 'Custom CSS for posts/pages (CCSS)', 'ccss_add_box', $key, 'normal','high' );
 	}
 }
 
