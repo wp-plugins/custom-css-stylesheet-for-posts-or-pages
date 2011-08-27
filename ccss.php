@@ -36,7 +36,7 @@ function ccss_box() {
 	
 	foreach ($ccss_post_types as $key=>$value)
 	{
-	Ã	add_meta_box( 'custom-css', 'Custom CSS for posts/pages (CCSS)', 'ccss_add_box', $key, 'normal','high' );
+	  add_meta_box( 'custom-css', 'Custom CSS for posts/pages (CCSS)', 'ccss_add_box', $key, 'normal','high' );
 	}
 }
 
