@@ -25,6 +25,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
+
 /* CHANGE THE FOLLOWING IF YOU NEED A DIFFERENT PATH IT MUST BE A SUBDIR IN YOUR THEME'S FOLDER */
 define('CCSS_PATH','/custom-css/');
 /* AND THAT'S ABOUT IT */
