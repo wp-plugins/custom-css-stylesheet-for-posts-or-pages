@@ -32,8 +32,12 @@ define('CCSS_PATH','/custom-css/');
 define('CCSS_VERSION','1.0');
 
 function ccss_box() {
- add_meta_box( 'custom-css', 'Custom CSS for posts/pages (CCSS)', 'ccss_add_box', 'post', 'normal','high' );
- add_meta_box( 'custom-css', 'Custom CSS for posts/pages (CCSS)', 'ccss_add_box', 'page', 'normal','high' );
+ $ccss_post_types = _ccss_get_post_types();
+	
+	foreach ($ccss_post_types as $key=>$value)
+	{
+		add_meta_box( 'custom-css', 'Custom CSS for posts/pages (CCSS)', 'ccss_add_box', $key, 'normal','high' );
+	}
 }
 
 function ccss_add_box() {
@@ -89,6 +93,19 @@ function ccss_include() {
  }
 }
 
+// fetch a list of all custom types so we can assign the dropdown to each one of them
+function _ccss_get_post_types()
+{
+	// Get the post types available
+	$types = array();
+	$types = get_post_types($args = array(
+		'public'   => true
+	), 'objects');
+
+	unset($types['attachment']);
+	return $types;
+}
+
 // oi! wait! where are you going? are you sure? 100%? a second thought? come on let's talk about it. oh well.
 function ccss_uninstall() {
 			global $wpdb;	
@@ -97,6 +114,6 @@ function ccss_uninstall() {
 
 add_action('admin_menu', 'ccss_box');
 add_action('save_post', 'ccss_save');
-add_action('wp_print_styles','ccss_include',999); // big number i know, just making sure it will load last 
+add_action('wp_print_styles','ccss_include',999);
 register_uninstall_hook(__FILE__, 'ccss_uninstall');
 ?>
