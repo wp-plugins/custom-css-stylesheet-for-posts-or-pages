@@ -3,7 +3,7 @@ Contributors: tsiger
 Tags: css, post art direction
 Requires at least: 3.0
 Tested up to: 3.2.1
-Stable tag: 1.0
+Stable tag: 1.1
 
 Adds any number of extra fields in any number of additional boxes on the Write/Edit page in the Admin.
 
@@ -25,6 +25,9 @@ To install Custom CSS:
 1. In the add/edit post/page select your custom css stylesheet. Enjoy
 
 == Changelog ==
+
+= 1.1 =
+* Added support for custom post types
 
 = 1.0 =
 * First release
