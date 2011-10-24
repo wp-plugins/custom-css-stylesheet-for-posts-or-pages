@@ -3,7 +3,7 @@
 Plugin Name: Custom CSS for Posts and Pages (CCSS)
 Plugin URI: http://webtoolkit4.me
 Description: An easy way to include custom stylesheets per post/page
-Version: 1.1
+Version: 1.2
 Author: Gerasimos Tsiamalos
 Author URI: http://theportraitofageek.com/
 
