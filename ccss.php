@@ -3,9 +3,9 @@
 Plugin Name: Custom CSS for Posts and Pages (CCSS)
 Plugin URI: http://webtoolkit4.me
 Description: An easy way to include custom stylesheets per post/page
-Version: 1.1
+Version: 1.2
 Author: Gerasimos Tsiamalos
-Author URI: http://webtoolkit4.me/
+Author URI: http://theportraitofageek.com/
 
 
 Copyright 2010  Gerasimos Tsiamalos  (email : tsiger@gmail.com)
@@ -86,7 +86,7 @@ function ccss_include() {
  global $wp_query;
  $id = $wp_query->post->ID;
  $the_sheet  = get_post_meta($id, 'css_sheet','true'); // stylesheet name
- $the_path   = get_template_directory_uri(); // path to our template folder
+ $the_path   = get_stylesheet_directory_uri(); // path to our template folder
  $the_output = $the_path . CCSS_PATH . $the_sheet; // let's create the whole thing
  if ($the_sheet) {
   if (is_single() || is_page())
