@@ -3,12 +3,13 @@ Contributors: tsiger
 Tags: css, post art direction
 Requires at least: 3.0
 Tested up to: 3.2.1
-Stable tag: 1.1
+Stable tag: 1.2
 
 Adds any number of extra fields in any number of additional boxes on the Write/Edit page in the Admin.
 
 == Description ==
 
+** Child themes are now supported **
 Custom CSS let's you include a custom css file per post/page. You have your main style.css but let's say in one post you want a few things different. Instead of polluting your main stylesheet, you can include a new one with just the styles that you need for this specific post/page.
 
 How to do it:
